@@ -1,7 +1,9 @@
 package com.arnav.loversconnect
 
-    data class Message(
-        val text: String = "",
-        val senderId: String = "",
-        val timestamp: Long = System.currentTimeMillis()
-    )
+// Message.kt
+data class Message(
+    var id: String? = null, // Add this ID field
+    val text: String = "",
+    val senderId: String = "",
+    val timestamp: Long = System.currentTimeMillis()
+)
